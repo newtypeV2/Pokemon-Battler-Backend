@@ -6,7 +6,7 @@ class PokemonsController < ApplicationController
                     :include => 
                     {
                         :specie => {:only => [:name]},
-                        :moves =>{:only => [:name,:base_damage]}
+                        :moves =>{:only => [:id,:name,:base_damage]}
                     }
         )
     end

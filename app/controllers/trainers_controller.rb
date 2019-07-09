@@ -5,11 +5,27 @@ class TrainersController < ApplicationController
             :except => [:created_at, :updated_at],
             :include => {
                 :pokemons => {
-                    :except => [:created_at, :updated_at,:specie_id],
+                    :except => [:created_at, :updated_at],
                     :include => 
                     {
                         :specie => {:only => [:name]},
-                        :moves =>{:only => [:name,:base_damage]}
+                        :moves =>{:only => [:id,:name,:base_damage]}
+                    }
+                    }
+                }
+        )
+    end
+
+    def show
+        render json: Trainer.find(params[:id]).to_json(
+            :except => [:created_at, :updated_at],
+            :include => {
+                :pokemons => {
+                    :except => [:created_at, :updated_at],
+                    :include => 
+                    {
+                        :specie => {:only => [:name]},
+                        :moves =>{:only => [:id,:name,:base_damage]}
                     }
                     }
                 }

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_06_212125) do
+ActiveRecord::Schema.define(version: 2019_07_08_201726) do
 
   create_table "moves", force: :cascade do |t|
     t.string "name"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 2019_07_06_212125) do
     t.datetime "updated_at", null: false
     t.string "imgFront"
     t.string "imgBack"
+    t.integer "max_hp"
   end
 
   create_table "species", force: :cascade do |t|
