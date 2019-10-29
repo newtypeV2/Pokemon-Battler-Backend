@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   get "trainers" => "trainers#index"
   get "trainers/:id" => "trainers#show"
+  get "pokemons/reset" => "pokemons#reset"
   get "pokemons/:id" => "pokemons#show"
+  patch "pokemons/:id" => "pokemons#update"
+  get "pokemons" => "pokemons#index"
+  
 
 end

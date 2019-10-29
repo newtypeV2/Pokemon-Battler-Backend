@@ -20,13 +20,13 @@ geodude = Specie.find_or_create_by(name: "Geodude", base_hp: 65)
 
 
 
-red_Pikachu = Pokemon.find_or_create_by(level: 15, current_hp: 65, max_hp:65, trainer_id: red.id, specie_id: pikachu.id,imgFront: "./assets/pokemons/pikachu/FRONT.gif" , imgBack: "./assets/pokemons/pikachu/BACK.gif")
-red_Pidgey = Pokemon.find_or_create_by(level: 13, current_hp: 73, max_hp:73, trainer_id: red.id, specie_id: pidgey.id,imgFront: "./assets/pokemons/pidgey/FRONT.gif" , imgBack: "./assets/pokemons/pidgey/BACK.gif")
-red_Rattata = Pokemon.find_or_create_by(level: 11, current_hp: 51, max_hp:51, trainer_id: red.id, specie_id: rattata.id,imgFront: "./assets/pokemons/rattata/FRONT.gif" , imgBack: "./assets/pokemons/rattata/BACK.gif")
-red_Mankey = Pokemon.find_or_create_by(level: 12, current_hp: 52, max_hp:52, trainer_id: red.id, specie_id: mankey.id,imgFront: "./assets/pokemons/mankey/FRONT.gif" , imgBack: "./assets/pokemons/mankey/BACK.gif")
+red_Pikachu = Pokemon.find_or_create_by(level: 15, current_hp: 65, max_hp:65, trainer_id: red.id, specie_id: pikachu.id,imgFront: "./assets/pokemons/pikachu/FRONT.gif", imgBack: "./assets/pokemons/pikachu/BACK.gif", imgMenu: "./assets/pokemons/pikachu/MENU.gif")
+red_Pidgey = Pokemon.find_or_create_by(level: 13, current_hp: 73, max_hp:73, trainer_id: red.id, specie_id: pidgey.id,imgFront: "./assets/pokemons/pidgey/FRONT.gif", imgBack: "./assets/pokemons/pidgey/BACK.gif", imgMenu: "./assets/pokemons/pidgey/MENU.gif")
+red_Rattata = Pokemon.find_or_create_by(level: 11, current_hp: 51, max_hp:51, trainer_id: red.id, specie_id: rattata.id,imgFront: "./assets/pokemons/rattata/FRONT.gif", imgBack: "./assets/pokemons/rattata/BACK.gif", imgMenu: "./assets/pokemons/rattata/MENU.gif")
+red_Mankey = Pokemon.find_or_create_by(level: 12, current_hp: 52, max_hp:52, trainer_id: red.id, specie_id: mankey.id,imgFront: "./assets/pokemons/mankey/FRONT.gif", imgBack: "./assets/pokemons/mankey/BACK.gif", imgMenu: "./assets/pokemons/mankey/MENU.gif")
 
-brock_Geodude = Pokemon.find_or_create_by(level: 18, current_hp: 83,max_hp: 83, trainer_id: brock.id, specie_id: geodude.id,imgFront: "./assets/pokemons/geodude/FRONT.gif" , imgBack: "./assets/pokemons/geodude/BACK.gif")
-brock_Onix = Pokemon.find_or_create_by(level: 20, current_hp: 100,max_hp: 100, trainer_id: brock.id, specie_id: onix.id,imgFront: "./assets/pokemons/onix/FRONT.gif" , imgBack: "./assets/pokemons/onix/BACK.gif")
+brock_Geodude = Pokemon.find_or_create_by(level: 18, current_hp: 166,max_hp: 166, trainer_id: brock.id, specie_id: geodude.id,imgFront: "./assets/pokemons/geodude/FRONT.gif", imgBack: "./assets/pokemons/geodude/BACK.gif", imgMenu: "./assets/pokemons/geodude/MENU.gif")
+brock_Onix = Pokemon.find_or_create_by(level: 20, current_hp: 200,max_hp: 200, trainer_id: brock.id, specie_id: onix.id,imgFront: "./assets/pokemons/onix/FRONT.gif", imgBack: "./assets/pokemons/onix/BACK.gif", imgMenu: "./assets/pokemons/geodude/MENU.gif")
 
 
 
